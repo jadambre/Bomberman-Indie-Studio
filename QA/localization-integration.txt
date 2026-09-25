@@ -1,0 +1,37 @@
+PASS: real settings buttons switch EN/FR in menu and pause; preference reload; focus retention; live campaign and active bomb unchanged; notices and save summary translate.
+English main menu: Active texts: 30; potential clipped labels: 0
+English settings: Active texts: 47; potential clipped labels: 0
+English controls: Active texts: 69; potential clipped labels: 0
+English overwrite: Active texts: 37; potential clipped labels: 0
+English pause stage 0: Active texts: 36; potential clipped labels: 0
+English HUD stage 0: Active texts: 25; potential clipped labels: 0
+English pause stage 1: Active texts: 36; potential clipped labels: 0
+English HUD stage 1: Active texts: 25; potential clipped labels: 0
+English pause stage 2: Active texts: 36; potential clipped labels: 0
+English HUD stage 2: Active texts: 25; potential clipped labels: 0
+English pause stage 3: Active texts: 36; potential clipped labels: 0
+English HUD stage 3: Active texts: 25; potential clipped labels: 0
+English pause stage 4: Active texts: 36; potential clipped labels: 0
+English HUD stage 4: Active texts: 25; potential clipped labels: 0
+English intro: Active texts: 28; potential clipped labels: 0
+English stage clear: Active texts: 20; potential clipped labels: 0
+English victory: Active texts: 19; potential clipped labels: 0
+English defeat: Active texts: 19; potential clipped labels: 0
+French main menu: Active texts: 30; potential clipped labels: 0
+French settings: Active texts: 47; potential clipped labels: 0
+French controls: Active texts: 69; potential clipped labels: 0
+French overwrite: Active texts: 37; potential clipped labels: 0
+French pause stage 0: Active texts: 36; potential clipped labels: 0
+French HUD stage 0: Active texts: 25; potential clipped labels: 0
+French pause stage 1: Active texts: 36; potential clipped labels: 0
+French HUD stage 1: Active texts: 25; potential clipped labels: 0
+French pause stage 2: Active texts: 36; potential clipped labels: 0
+French HUD stage 2: Active texts: 25; potential clipped labels: 0
+French pause stage 3: Active texts: 36; potential clipped labels: 0
+French HUD stage 3: Active texts: 25; potential clipped labels: 0
+French pause stage 4: Active texts: 36; potential clipped labels: 0
+French HUD stage 4: Active texts: 25; potential clipped labels: 0
+French intro: Active texts: 28; potential clipped labels: 0
+French stage clear: Active texts: 20; potential clipped labels: 0
+French victory: Active texts: 19; potential clipped labels: 0
+French defeat: Active texts: 19; potential clipped labels: 0

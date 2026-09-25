@@ -1,0 +1,279 @@
+{
+  "status": "completed",
+  "duration": 0.56,
+  "summary": {
+    "total": 38,
+    "passed": 38,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.EveryStageHasLocalizedPresentationAndCanReturnToEnglish",
+      "Status": "Passed",
+      "Duration": 0.0138333,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.InvalidLanguagePreferenceFallsBackToEnglish(\"\")",
+      "Status": "Passed",
+      "Duration": 0.0012775,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.InvalidLanguagePreferenceFallsBackToEnglish(\"unsupported-language\")",
+      "Status": "Passed",
+      "Duration": 0.000161,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.MissingLanguagePreferenceDefaultsToEnglish",
+      "Status": "Passed",
+      "Duration": 0.0002162,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.MissingTranslationRemainsReadableAndEmptyTextIsSafe",
+      "Status": "Passed",
+      "Duration": 0.0002442,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.NumericFormattingUsesTheSelectedLanguage",
+      "Status": "Passed",
+      "Duration": 0.0003828,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.SavedChoiceIsRestoredAfterAnInMemoryLanguageChange(English,\"en\",French)",
+      "Status": "Passed",
+      "Duration": 0.0004911,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.SavedChoiceIsRestoredAfterAnInMemoryLanguageChange(French,\"fr\",English)",
+      "Status": "Passed",
+      "Duration": 0.0001936,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.SwitchingLanguageImmediatelyChangesMenusAndNoticesInBothDirections",
+      "Status": "Passed",
+      "Duration": 0.0002582,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.LocalizationTests.SwitchingLanguageLeavesTheLiveCampaignUnchanged",
+      "Status": "Passed",
+      "Duration": 0.0060064,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.ReadRejectsActorOutsideArena",
+      "Status": "Passed",
+      "Duration": 0.011487,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.ReadRejectsDuplicateActorIdentifiers",
+      "Status": "Passed",
+      "Duration": 0.0061497,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.ReadRejectsInvalidActorSpeed",
+      "Status": "Passed",
+      "Duration": 0.0051281,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.ReadRejectsInvalidMovementProgress",
+      "Status": "Passed",
+      "Duration": 0.0055916,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.CorruptPrimaryRecoversPreviousCompleteSaveAndItsCheckpoint",
+      "Status": "Passed",
+      "Duration": 0.0172274,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.InvalidPrimaryAndBackupReturnNoCampaignWithHelpfulNotice",
+      "Status": "Passed",
+      "Duration": 0.0031012,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.MissingSaveReturnsNoCampaignAndNoErrorNotice",
+      "Status": "Passed",
+      "Duration": 0.0014582,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.RejectedWriteLeavesTheLastValidCampaignUntouched",
+      "Status": "Passed",
+      "Duration": 0.0069029,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SaveRepositoryTests.WriteAndReadPreserveFullLiveSessionAndIndependentRetryCheckpoint",
+      "Status": "Passed",
+      "Duration": 0.0164085,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.AllUpgradesApplyWithCapsAndWallPassDoesNotPassPillarsOrBombs",
+      "Status": "Passed",
+      "Duration": 0.0017149,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.BotPlantsToOpenCrateAndEscapesItsOwnBlast",
+      "Status": "Passed",
+      "Duration": 0.0032951,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.BotRefusesSuicidalBombInSealedCorridor",
+      "Status": "Passed",
+      "Duration": 0.0003161,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(1,False)",
+      "Status": "Passed",
+      "Duration": 0.0010646,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(2,False)",
+      "Status": "Passed",
+      "Duration": 0.000111,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(1,True)",
+      "Status": "Passed",
+      "Duration": 0.0008099,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(2,True)",
+      "Status": "Passed",
+      "Duration": 0.0007271,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.CapacityReturnsAfterOwnedBombExplodes",
+      "Status": "Passed",
+      "Duration": 0.0001504,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.ChainReactionTriggersWholeChainAndBombStopsOriginalRay",
+      "Status": "Passed",
+      "Duration": 0.000714,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.DeadlineLosesAnUnfinishedStage",
+      "Status": "Passed",
+      "Duration": 0.0001519,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.ExplosionsStopAtPillarsAndFirstCrateAndExposeDrop",
+      "Status": "Passed",
+      "Duration": 0.0004398,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.FriendlyFireOnlyLosesWhenLastHumanDies",
+      "Status": "Passed",
+      "Duration": 0.0002283,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.InvalidSavedMovementIsRejected",
+      "Status": "Passed",
+      "Duration": 0.000822,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.MidMovementSavePreservesFusesFlamesGraceAndDeterministicContinuation",
+      "Status": "Passed",
+      "Duration": 0.0399082,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.MovementInterpolatesAndCannotEnterSolidTile",
+      "Status": "Passed",
+      "Duration": 0.0004015,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.MovingBombPlacementUsesVisiblePositionAndDoesNotTrapPlacer",
+      "Status": "Passed",
+      "Duration": 0.0003186,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.PlacerCanWalkOutButCannotReenterBomb",
+      "Status": "Passed",
+      "Duration": 0.0004466,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.ProceduralMapsHaveSafeSpawnsAllUpgradesAndConnectedDestructibleSpace",
+      "Status": "Passed",
+      "Duration": 0.0356339,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.SameSeedRecreatesMapAndDifferentSeedsVaryIt",
+      "Status": "Passed",
+      "Duration": 0.0006048,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

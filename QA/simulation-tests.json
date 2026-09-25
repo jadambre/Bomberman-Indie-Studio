@@ -1,0 +1,125 @@
+{
+  "status": "completed",
+  "duration": 0.32,
+  "summary": {
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.AllUpgradesApplyWithCapsAndWallPassDoesNotPassPillarsOrBombs",
+      "Status": "Passed",
+      "Duration": 0.0124202,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.BotPlantsToOpenCrateAndEscapesItsOwnBlast",
+      "Status": "Passed",
+      "Duration": 0.0041878,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.BotRefusesSuicidalBombInSealedCorridor",
+      "Status": "Passed",
+      "Duration": 0.0002204,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.CampaignHasFiveIncreasingStagesAndRevivesPartnerWithUpgrades",
+      "Status": "Passed",
+      "Duration": 0.0008636,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.CapacityReturnsAfterOwnedBombExplodes",
+      "Status": "Passed",
+      "Duration": 0.0001609,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.ChainReactionTriggersWholeChainAndBombStopsOriginalRay",
+      "Status": "Passed",
+      "Duration": 0.0010719,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.DeadlineLosesAnUnfinishedStage",
+      "Status": "Passed",
+      "Duration": 0.0001408,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.ExplosionsStopAtPillarsAndFirstCrateAndExposeDrop",
+      "Status": "Passed",
+      "Duration": 0.0004297,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.FriendlyFireOnlyLosesWhenLastHumanDies",
+      "Status": "Passed",
+      "Duration": 0.0001741,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.InvalidSavedMovementIsRejected",
+      "Status": "Passed",
+      "Duration": 0.0020005,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.MidMovementSavePreservesFusesFlamesGraceAndDeterministicContinuation",
+      "Status": "Passed",
+      "Duration": 0.0348251,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.MovementInterpolatesAndCannotEnterSolidTile",
+      "Status": "Passed",
+      "Duration": 0.000661,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.MovingBombPlacementUsesVisiblePositionAndDoesNotTrapPlacer",
+      "Status": "Passed",
+      "Duration": 0.0009933,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.PlacerCanWalkOutButCannotReenterBomb",
+      "Status": "Passed",
+      "Duration": 0.0004855,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.ProceduralMapsHaveSafeSpawnsAllUpgradesAndConnectedDestructibleSpace",
+      "Status": "Passed",
+      "Duration": 0.0354876,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EmberGrid.Tests.SimulationTests.SameSeedRecreatesMapAndDifferentSeedsVaryIt",
+      "Status": "Passed",
+      "Duration": 0.0005905,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

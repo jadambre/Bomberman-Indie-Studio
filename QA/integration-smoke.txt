@@ -1,0 +1,1 @@
+PASS: co-op creation; pause; exact save/load with active bomb and upgrades; retry checkpoint; all five stage renderers; stage clear and next stage; campaign completion; defeat and retry; interactive menu.
