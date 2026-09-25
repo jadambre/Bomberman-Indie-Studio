@@ -1,0 +1,71 @@
+# Unity caches, local settings and generated players
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Aa]ssets/AssetStoreTools*
+
+# IDE and operating-system files
+/.vs/
+/.idea/
+/.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+sysinfo.txt
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.pfx
+*.p12
+
+# Local automation installation and unused original sound library.
+# Runtime audio is versioned under Assets/Resources/Audio with Git LFS.
+/.agents/
+/Sounds/
+
+# Pipeline captures are generated outside the game's runtime resources.
+/Assets/QA/
+/Assets/QA.meta
+
+# Keep curated verification evidence, never local saves, logs or machine paths.
+/QA/*
+!/QA/*.md
+!/QA/all-tests.json
+!/QA/simulation-tests.json
+!/QA/integration-smoke.txt
+!/QA/localization-integration.txt
+!/QA/settings-copy-check.txt
+!/QA/build-report.txt
+!/QA/Screenshots/
+/QA/Screenshots/*
+!/QA/Screenshots/renamed-menu.png
+!/QA/Screenshots/settings-fr.png
+!/QA/Screenshots/gameplay-fr-4x3.png
+!/QA/Screenshots/stage-2.png
+!/QA/Screenshots/stage-3.png
+!/QA/Screenshots/stage-4.png
+!/QA/Screenshots/stage-5.png
