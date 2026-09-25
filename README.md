@@ -2,7 +2,27 @@
 
 A five-arena bomb-battler for **Unity 6.3 LTS (6000.3.23f1)**. One or two players share a keyboard and cooperate against bots in procedural 3D arenas with grid-based 2D gameplay. The interface supports English and French.
 
-## Get the project running
+## Play on Windows — no Unity or Git required
+
+For **64-bit Windows**, download the ready-to-play game from the [latest release](https://github.com/jadambre/Bomberman-Indie-Studio/releases/latest).
+
+1. Under **Assets**, download **[Bomberman-Indie-Studio-v1.0.0-Windows-x64.zip](https://github.com/jadambre/Bomberman-Indie-Studio/releases/download/v1.0.0/Bomberman-Indie-Studio-v1.0.0-Windows-x64.zip)**. The **Source code** archives contain the development project, not the playable game.
+2. Right-click the downloaded ZIP and choose **Extract All**.
+3. Open the extracted **`Bomberman-Indie-Studio-Windows`** folder and double-click **`BombermanIndieStudio.exe`**.
+
+Keep all the extracted files and folders together. Launch the game from the extracted folder, not from inside the ZIP archive.
+
+## Jouer sur Windows — sans Unity ni Git
+
+Pour **Windows 64 bits**, téléchargez le jeu prêt à lancer depuis la [dernière version publiée](https://github.com/jadambre/Bomberman-Indie-Studio/releases/latest).
+
+1. Dans **Assets**, téléchargez **[Bomberman-Indie-Studio-v1.0.0-Windows-x64.zip](https://github.com/jadambre/Bomberman-Indie-Studio/releases/download/v1.0.0/Bomberman-Indie-Studio-v1.0.0-Windows-x64.zip)**. Les archives **Source code** contiennent le projet de développement, pas le jeu jouable.
+2. Faites un clic droit sur le ZIP téléchargé, puis choisissez **Extraire tout**.
+3. Ouvrez le dossier extrait **`Bomberman-Indie-Studio-Windows`**, puis double-cliquez sur **`BombermanIndieStudio.exe`**.
+
+Conservez tous les fichiers et dossiers extraits ensemble. Lancez le jeu depuis le dossier extrait, pas directement dans l'archive ZIP.
+
+## Developer setup — clone and open in Unity
 
 Install Git, Git LFS and Unity Hub, then run:
 
@@ -21,7 +41,7 @@ The selected audio assets use Git LFS. Complete the LFS download before opening 
 
 The scene, assemblies and code use `BombermanIndieStudio`; the displayed game title is **Bomberman Indie Studio**.
 
-## Build and play on Windows
+## Developer build — Windows
 
 In the Unity editor, choose **Bomberman Indie Studio → Build Windows release**. The build targets Windows x64 with Mono and writes `Builds/Windows/BombermanIndieStudio.exe`. If Windows build support is unavailable, add the appropriate module to this editor installation through Unity Hub.
 
