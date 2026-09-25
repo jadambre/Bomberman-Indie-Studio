@@ -1,6 +1,0 @@
-{
-  "name": "EmberGrid.Runtime",
-  "rootNamespace": "EmberGrid",
-  "references": ["Unity.ugui"],
-  "autoReferenced": true
-}

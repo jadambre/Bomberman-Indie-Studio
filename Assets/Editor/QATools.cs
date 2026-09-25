@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace EmberGrid.Editor
+namespace BombermanIndieStudio.Editor
 {
     /// <summary>Editor-only integration checks and capture helpers, callable through Unity Pipeline.</summary>
     public static class QATools
@@ -21,7 +21,7 @@ namespace EmberGrid.Editor
             var groupType=group.GetType();
             var sizeType=assembly.GetType("UnityEditor.GameViewSize");
             var kindType=assembly.GetType("UnityEditor.GameViewSizeType");
-            var size=Activator.CreateInstance(sizeType,BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic,null,new object[]{Enum.ToObject(kindType,1),width,height,"EMBERGRID QA"},null);
+            var size=Activator.CreateInstance(sizeType,BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic,null,new object[]{Enum.ToObject(kindType,1),width,height,"Bomberman Indie Studio QA"},null);
             groupType.GetMethod("AddCustomSize").Invoke(group,new[]{size});
             int count=(int)groupType.GetMethod("GetTotalCount").Invoke(group,null);
             var window=EditorWindow.GetWindow(assembly.GetType("UnityEditor.GameView"));

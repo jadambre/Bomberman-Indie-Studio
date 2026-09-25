@@ -1,4 +1,4 @@
 Result: Succeeded
-Size: 108814368 bytes
-Time: 00:00:04.1241560
+Size: 108814801 bytes
+Time: 00:00:01.6659689
 Errors: 0

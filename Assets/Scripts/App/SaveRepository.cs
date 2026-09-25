@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using UnityEngine;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
     [Serializable] public class CampaignSave
     {

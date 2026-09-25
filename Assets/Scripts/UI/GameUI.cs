@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
     /// <summary>The complete, resolution-independent interface. Game rules remain in Simulation.</summary>
     public sealed class GameUI : MonoBehaviour
@@ -37,7 +37,7 @@ namespace EmberGrid
             app = gameApp;
             font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             rounded = MakeRoundedSprite();
-            var go = new GameObject("EMBERGRID Interface", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
+            var go = new GameObject("Bomberman Indie Studio Interface", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
             go.transform.SetParent(transform, false);
             canvas = go.GetComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;

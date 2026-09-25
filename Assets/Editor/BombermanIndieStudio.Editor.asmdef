@@ -1,0 +1,6 @@
+{
+  "name": "BombermanIndieStudio.Editor",
+  "rootNamespace": "BombermanIndieStudio.Editor",
+  "references": ["BombermanIndieStudio.Runtime", "Unity.ugui"],
+  "includePlatforms": ["Editor"]
+}

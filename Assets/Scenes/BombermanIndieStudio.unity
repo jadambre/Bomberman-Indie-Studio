@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 1122194623}
   - component: {fileID: 1122194622}
   m_Layer: 0
-  m_Name: "EMBERGRID \xB7 Game Director"
+  m_Name: "Bomberman Indie Studio \xB7 Game Director"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65fb3684a90e39745b5b1658d9e157d4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: EmberGrid.Runtime::EmberGrid.GameApp
+  m_EditorClassIdentifier: BombermanIndieStudio.Runtime::BombermanIndieStudio.GameApp
 --- !u!4 &1122194623
 Transform:
   m_ObjectHideFlags: 0

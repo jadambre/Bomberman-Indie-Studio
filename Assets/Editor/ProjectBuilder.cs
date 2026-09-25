@@ -6,7 +6,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace EmberGrid.Editor
+namespace BombermanIndieStudio.Editor
 {
     public static class ProjectBuilder
     {
@@ -65,8 +65,8 @@ namespace EmberGrid.Editor
             RenderSettings.ambientSkyColor=new Color(.43f,.51f,.58f);
             RenderSettings.ambientEquatorColor=new Color(.22f,.29f,.35f);
             RenderSettings.ambientGroundColor=new Color(.12f,.15f,.20f);
-            EditorSceneManager.SaveScene(scene,"Assets/Scenes/EmberGrid.unity");
-            EditorBuildSettings.scenes=new[]{new EditorBuildSettingsScene("Assets/Scenes/EmberGrid.unity",true)};
+            EditorSceneManager.SaveScene(scene,"Assets/Scenes/BombermanIndieStudio.unity");
+            EditorBuildSettings.scenes=new[]{new EditorBuildSettingsScene("Assets/Scenes/BombermanIndieStudio.unity",true)};
             ConfigureAudio();
             AssetDatabase.SaveAssets();
             Debug.Log("Bomberman Indie Studio project configured, launch scene saved.");
@@ -93,12 +93,12 @@ namespace EmberGrid.Editor
         [MenuItem("Bomberman Indie Studio/Build Windows release")]
         public static void BuildWindows()
         {
-            if(!File.Exists("Assets/Scenes/EmberGrid.unity")) Configure();
+            if(!File.Exists("Assets/Scenes/BombermanIndieStudio.unity")) Configure();
             PlayerSettings.productName="Bomberman Indie Studio";
             AssetDatabase.SaveAssets();
             Directory.CreateDirectory("Builds/Windows");
             var result=BuildPipeline.BuildPlayer(new BuildPlayerOptions {
-                scenes=new[]{"Assets/Scenes/EmberGrid.unity"}, locationPathName="Builds/Windows/BombermanIndieStudio.exe",
+                scenes=new[]{"Assets/Scenes/BombermanIndieStudio.unity"}, locationPathName="Builds/Windows/BombermanIndieStudio.exe",
                 target=BuildTarget.StandaloneWindows64, options=BuildOptions.None
             });
             var report="Result: "+result.summary.result+"\nSize: "+result.summary.totalSize+" bytes\nTime: "+result.summary.totalTime+"\nErrors: "+result.summary.totalErrors;

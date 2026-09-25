@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
     public enum TileKind { Floor, Pillar, Crate }
     public enum PickupKind { BombUp, SpeedUp, FireUp, WallPass }

@@ -17,15 +17,15 @@ The selected audio assets use Git LFS. Complete the LFS download before opening 
 
 1. In Unity Hub, install **Unity 6000.3.23f1** and add the cloned project folder.
 2. Open the project and let Unity restore packages and import assets.
-3. Open `Assets/Scenes/EmberGrid.unity` and press **Play**.
+3. Open `Assets/Scenes/BombermanIndieStudio.unity` and press **Play**.
 
-`EmberGrid` remains the internal scene and code name; the displayed game title is **Bomberman Indie Studio**.
+The scene, assemblies and code use `BombermanIndieStudio`; the displayed game title is **Bomberman Indie Studio**.
 
 ## Build and play on Windows
 
 In the Unity editor, choose **Bomberman Indie Studio → Build Windows release**. The build targets Windows x64 with Mono and writes `Builds/Windows/BombermanIndieStudio.exe`. If Windows build support is unavailable, add the appropriate module to this editor installation through Unity Hub.
 
-After building, double-click **`Play Bomberman Indie Studio.cmd`** or run the executable directly. Keep the entire `Builds/Windows` folder together, including the `_Data` folder and Unity DLLs. The legacy `Play EmberGrid.cmd` launcher forwards to the same game.
+After building, double-click **`Play Bomberman Indie Studio.cmd`** or run the executable directly. Keep the entire `Builds/Windows` folder together, including the `_Data` folder and Unity DLLs.
 
 Generated builds are excluded from Git: **a fresh clone does not include an executable**.
 
@@ -68,7 +68,7 @@ On Windows, the save location is:
 %USERPROFILE%\AppData\LocalLow\EmberGrid\EMBERGRID\campaign-v1.json
 ```
 
-This legacy folder is deliberately preserved so existing campaigns remain available after the game's rename. Language, volume and screen-shake preferences are stored separately through Unity PlayerPrefs.
+This legacy folder is deliberately preserved so existing campaigns remain available. The Unity company identifier also remains unchanged to preserve existing preferences. These compatibility settings are separate from the current scene, assembly and namespace names. Language, volume and screen-shake preferences are stored separately through Unity PlayerPrefs.
 
 ## Development and verification
 

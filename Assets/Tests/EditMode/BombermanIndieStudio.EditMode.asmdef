@@ -1,0 +1,7 @@
+{
+  "name": "BombermanIndieStudio.EditMode",
+  "rootNamespace": "BombermanIndieStudio.Tests",
+  "references": [ "BombermanIndieStudio.Runtime" ],
+  "includePlatforms": [ "Editor" ],
+  "optionalUnityReferences": [ "TestAssemblies" ]
+}

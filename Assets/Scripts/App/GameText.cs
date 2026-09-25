@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
     public enum GameLanguage { English, French }
 

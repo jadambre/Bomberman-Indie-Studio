@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/EmberGrid.unity
+    path: Assets/Scenes/BombermanIndieStudio.unity
     guid: 1a673cdf298e60248bf56ac1e0c3ea2b
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

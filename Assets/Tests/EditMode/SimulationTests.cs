@@ -4,7 +4,7 @@ using System.Linq;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace EmberGrid.Tests
+namespace BombermanIndieStudio.Tests
 {
     public sealed class SimulationTests
     {

@@ -1,0 +1,6 @@
+{
+  "name": "BombermanIndieStudio.Runtime",
+  "rootNamespace": "BombermanIndieStudio",
+  "references": ["Unity.ugui"],
+  "autoReferenced": true
+}

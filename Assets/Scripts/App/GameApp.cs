@@ -1,8 +1,9 @@
 using System;
 using UnityEngine;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
+    [UnityEngine.Scripting.APIUpdating.MovedFrom(true, "EmberGrid", "EmberGrid.Runtime", "GameApp")]
     [DefaultExecutionOrder(-100)]
     public sealed class GameApp : MonoBehaviour
     {
@@ -31,7 +32,7 @@ namespace EmberGrid
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void Bootstrap()
         {
-            if(FindFirstObjectByType<GameApp>()==null) new GameObject("EMBERGRID").AddComponent<GameApp>();
+            if(FindFirstObjectByType<GameApp>()==null) new GameObject("Bomberman Indie Studio").AddComponent<GameApp>();
         }
         void Awake()
         {

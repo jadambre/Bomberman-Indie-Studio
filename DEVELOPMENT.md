@@ -6,7 +6,7 @@ Use **Unity 6.3 LTS, 6000.3.23f1**, as recorded in `ProjectSettings/ProjectVersi
 
 Run `git lfs install` and `git lfs pull` when setting up a clone. Audio files under `Assets/Resources/Audio` are stored through Git LFS. Unity restores the dependencies declared in `Packages/manifest.json` and `Packages/packages-lock.json` during project import.
 
-Open `Assets/Scenes/EmberGrid.unity` and press Play. This minimal scene starts `GameApp`; the arena and interface are created at runtime. The namespace, assembly names and scene retain `EmberGrid` as their internal identity. The public game title is Bomberman Indie Studio.
+Open `Assets/Scenes/BombermanIndieStudio.unity` and press Play. This minimal scene starts `GameApp`; the arena and interface are created at runtime. Runtime code uses the `BombermanIndieStudio` namespace; editor and test code use its `Editor` and `Tests` namespaces. The public game title is Bomberman Indie Studio.
 
 ## Architecture
 
@@ -24,7 +24,7 @@ Open `Assets/Scenes/EmberGrid.unity` and press Play. This minimal scene starts `
 | `Assets/Editor` | Scene configuration, Windows build commands and editor QA helpers. |
 | `Assets/Tests/EditMode` | Simulation, save-repository and localization tests. |
 
-`EmberGrid.Runtime` contains the game code. `EmberGrid.Editor` and `EmberGrid.EditMode` are editor-only assemblies; the latter contains the tests.
+`BombermanIndieStudio.Runtime` contains the game code. `BombermanIndieStudio.Editor` and `BombermanIndieStudio.EditMode` are editor-only assemblies; the latter contains the tests. Their assembly definitions are `Assets/Scripts/BombermanIndieStudio.Runtime.asmdef`, `Assets/Editor/BombermanIndieStudio.Editor.asmdef`, and `Assets/Tests/EditMode/BombermanIndieStudio.EditMode.asmdef`.
 
 ### Simulation and application flow
 
@@ -38,7 +38,7 @@ The campaign has five stages on a 15 × 11 grid. One or two human players cooper
 
 A save contains both the live session and the arena's starting checkpoint. Continuing restores the live session, including movement, active bombs, flames and upgrades. Retrying restores the checkpoint. Changes to state serialization must preserve or deliberately migrate the versioned save format and retain validation of loaded data.
 
-Windows saves continue to use `%USERPROFILE%\AppData\LocalLow\EmberGrid\EMBERGRID\campaign-v1.json`. Do not change this internal path as part of a display-name change. Language, sound levels and screen shake are separate PlayerPrefs settings.
+Windows saves continue to use `%USERPROFILE%\AppData\LocalLow\EmberGrid\EMBERGRID\campaign-v1.json`. This legacy path is an intentional compatibility exception to the current source naming. Unity's company identifier remains `EmberGrid` so existing saves and preferences keep their storage identity. Language, sound levels and screen shake are separate PlayerPrefs settings. Preserve these storage settings when changing display names or code identifiers.
 
 Use `GameText.T` and `GameText.Format` for visible strings. Add corresponding French translations when introducing English source text. Use the selected language's culture for displayed numbers. Language switching must refresh existing menus, notices and save summaries without altering campaign data.
 

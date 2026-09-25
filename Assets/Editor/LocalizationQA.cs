@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace EmberGrid.Editor
+namespace BombermanIndieStudio.Editor
 {
     public static class LocalizationQA
     {

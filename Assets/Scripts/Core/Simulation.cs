@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
     /// <summary>Serializable, scene-independent rules for the five-arena cooperative campaign.</summary>
     public sealed class Simulation

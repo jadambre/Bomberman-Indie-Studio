@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 
-namespace EmberGrid.Tests
+namespace BombermanIndieStudio.Tests
 {
     public sealed class LocalizationTests
     {

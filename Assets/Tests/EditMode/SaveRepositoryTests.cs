@@ -6,7 +6,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace EmberGrid.Tests
+namespace BombermanIndieStudio.Tests
 {
     public sealed class SaveRepositoryTests
     {

@@ -1,277 +1,277 @@
 {
   "status": "completed",
-  "duration": 0.56,
+  "duration": 3.02,
   "summary": {
-    "total": 38,
-    "passed": 38,
-    "failed": 0,
-    "skipped": 0,
-    "inconclusive": 0
+    "Total": 38,
+    "Passed": 38,
+    "Failed": 0,
+    "Skipped": 0,
+    "Inconclusive": 0
   },
   "results": [
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.EveryStageHasLocalizedPresentationAndCanReturnToEnglish",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.EveryStageHasLocalizedPresentationAndCanReturnToEnglish",
       "Status": "Passed",
-      "Duration": 0.0138333,
+      "Duration": 0.0107625,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.InvalidLanguagePreferenceFallsBackToEnglish(\"\")",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.InvalidLanguagePreferenceFallsBackToEnglish(\"\")",
       "Status": "Passed",
-      "Duration": 0.0012775,
+      "Duration": 0.0013701,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.InvalidLanguagePreferenceFallsBackToEnglish(\"unsupported-language\")",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.InvalidLanguagePreferenceFallsBackToEnglish(\"unsupported-language\")",
       "Status": "Passed",
-      "Duration": 0.000161,
+      "Duration": 0.0001198,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.MissingLanguagePreferenceDefaultsToEnglish",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.MissingLanguagePreferenceDefaultsToEnglish",
       "Status": "Passed",
-      "Duration": 0.0002162,
+      "Duration": 0.0003586,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.MissingTranslationRemainsReadableAndEmptyTextIsSafe",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.MissingTranslationRemainsReadableAndEmptyTextIsSafe",
       "Status": "Passed",
-      "Duration": 0.0002442,
+      "Duration": 0.0002024,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.NumericFormattingUsesTheSelectedLanguage",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.NumericFormattingUsesTheSelectedLanguage",
       "Status": "Passed",
-      "Duration": 0.0003828,
+      "Duration": 0.0003396,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.SavedChoiceIsRestoredAfterAnInMemoryLanguageChange(English,\"en\",French)",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.SavedChoiceIsRestoredAfterAnInMemoryLanguageChange(English,\"en\",French)",
       "Status": "Passed",
-      "Duration": 0.0004911,
+      "Duration": 0.0003322,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.SavedChoiceIsRestoredAfterAnInMemoryLanguageChange(French,\"fr\",English)",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.SavedChoiceIsRestoredAfterAnInMemoryLanguageChange(French,\"fr\",English)",
       "Status": "Passed",
-      "Duration": 0.0001936,
+      "Duration": 0.00012,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.SwitchingLanguageImmediatelyChangesMenusAndNoticesInBothDirections",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.SwitchingLanguageImmediatelyChangesMenusAndNoticesInBothDirections",
       "Status": "Passed",
-      "Duration": 0.0002582,
+      "Duration": 0.0001967,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.LocalizationTests.SwitchingLanguageLeavesTheLiveCampaignUnchanged",
+      "FullName": "BombermanIndieStudio.Tests.LocalizationTests.SwitchingLanguageLeavesTheLiveCampaignUnchanged",
       "Status": "Passed",
-      "Duration": 0.0060064,
+      "Duration": 0.0045953,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.ReadRejectsActorOutsideArena",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.ReadRejectsActorOutsideArena",
       "Status": "Passed",
-      "Duration": 0.011487,
+      "Duration": 0.0117585,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.ReadRejectsDuplicateActorIdentifiers",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.ReadRejectsDuplicateActorIdentifiers",
       "Status": "Passed",
-      "Duration": 0.0061497,
+      "Duration": 0.0058252,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.ReadRejectsInvalidActorSpeed",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.ReadRejectsInvalidActorSpeed",
       "Status": "Passed",
-      "Duration": 0.0051281,
+      "Duration": 0.0054705,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.ReadRejectsInvalidMovementProgress",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.ReadRejectsInvalidMovementProgress",
       "Status": "Passed",
-      "Duration": 0.0055916,
+      "Duration": 0.0059247,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.CorruptPrimaryRecoversPreviousCompleteSaveAndItsCheckpoint",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.CorruptPrimaryRecoversPreviousCompleteSaveAndItsCheckpoint",
       "Status": "Passed",
-      "Duration": 0.0172274,
+      "Duration": 0.0153203,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.InvalidPrimaryAndBackupReturnNoCampaignWithHelpfulNotice",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.InvalidPrimaryAndBackupReturnNoCampaignWithHelpfulNotice",
       "Status": "Passed",
-      "Duration": 0.0031012,
+      "Duration": 0.0062816,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.MissingSaveReturnsNoCampaignAndNoErrorNotice",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.MissingSaveReturnsNoCampaignAndNoErrorNotice",
       "Status": "Passed",
-      "Duration": 0.0014582,
+      "Duration": 0.0015506,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.RejectedWriteLeavesTheLastValidCampaignUntouched",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.RejectedWriteLeavesTheLastValidCampaignUntouched",
       "Status": "Passed",
-      "Duration": 0.0069029,
+      "Duration": 0.0077192,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SaveRepositoryTests.WriteAndReadPreserveFullLiveSessionAndIndependentRetryCheckpoint",
+      "FullName": "BombermanIndieStudio.Tests.SaveRepositoryTests.WriteAndReadPreserveFullLiveSessionAndIndependentRetryCheckpoint",
       "Status": "Passed",
-      "Duration": 0.0164085,
+      "Duration": 0.0154209,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.AllUpgradesApplyWithCapsAndWallPassDoesNotPassPillarsOrBombs",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.AllUpgradesApplyWithCapsAndWallPassDoesNotPassPillarsOrBombs",
       "Status": "Passed",
-      "Duration": 0.0017149,
+      "Duration": 0.0014212,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.BotPlantsToOpenCrateAndEscapesItsOwnBlast",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.BotPlantsToOpenCrateAndEscapesItsOwnBlast",
       "Status": "Passed",
-      "Duration": 0.0032951,
+      "Duration": 0.0032197,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.BotRefusesSuicidalBombInSealedCorridor",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.BotRefusesSuicidalBombInSealedCorridor",
       "Status": "Passed",
-      "Duration": 0.0003161,
+      "Duration": 0.0002192,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(1,False)",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(1,False)",
       "Status": "Passed",
-      "Duration": 0.0010646,
+      "Duration": 0.0010101,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(2,False)",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(2,False)",
       "Status": "Passed",
-      "Duration": 0.000111,
+      "Duration": 0.0001229,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(1,True)",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(1,True)",
       "Status": "Passed",
-      "Duration": 0.0008099,
+      "Duration": 0.00106,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(2,True)",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.CampaignResetsAllPlayerUpgradesAtEachNewStage(2,True)",
       "Status": "Passed",
-      "Duration": 0.0007271,
+      "Duration": 0.0009931,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.CapacityReturnsAfterOwnedBombExplodes",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.CapacityReturnsAfterOwnedBombExplodes",
       "Status": "Passed",
-      "Duration": 0.0001504,
+      "Duration": 0.0002065,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.ChainReactionTriggersWholeChainAndBombStopsOriginalRay",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.ChainReactionTriggersWholeChainAndBombStopsOriginalRay",
       "Status": "Passed",
-      "Duration": 0.000714,
+      "Duration": 0.0007416,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.DeadlineLosesAnUnfinishedStage",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.DeadlineLosesAnUnfinishedStage",
       "Status": "Passed",
-      "Duration": 0.0001519,
+      "Duration": 0.0001324,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.ExplosionsStopAtPillarsAndFirstCrateAndExposeDrop",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.ExplosionsStopAtPillarsAndFirstCrateAndExposeDrop",
       "Status": "Passed",
-      "Duration": 0.0004398,
+      "Duration": 0.0004083,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.FriendlyFireOnlyLosesWhenLastHumanDies",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.FriendlyFireOnlyLosesWhenLastHumanDies",
       "Status": "Passed",
-      "Duration": 0.0002283,
+      "Duration": 0.0001762,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.InvalidSavedMovementIsRejected",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.InvalidSavedMovementIsRejected",
       "Status": "Passed",
-      "Duration": 0.000822,
+      "Duration": 0.0006523,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.MidMovementSavePreservesFusesFlamesGraceAndDeterministicContinuation",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.MidMovementSavePreservesFusesFlamesGraceAndDeterministicContinuation",
       "Status": "Passed",
-      "Duration": 0.0399082,
+      "Duration": 0.0306768,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.MovementInterpolatesAndCannotEnterSolidTile",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.MovementInterpolatesAndCannotEnterSolidTile",
       "Status": "Passed",
-      "Duration": 0.0004015,
+      "Duration": 0.0003213,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.MovingBombPlacementUsesVisiblePositionAndDoesNotTrapPlacer",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.MovingBombPlacementUsesVisiblePositionAndDoesNotTrapPlacer",
       "Status": "Passed",
-      "Duration": 0.0003186,
+      "Duration": 0.0002823,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.PlacerCanWalkOutButCannotReenterBomb",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.PlacerCanWalkOutButCannotReenterBomb",
       "Status": "Passed",
-      "Duration": 0.0004466,
+      "Duration": 0.000508,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.ProceduralMapsHaveSafeSpawnsAllUpgradesAndConnectedDestructibleSpace",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.ProceduralMapsHaveSafeSpawnsAllUpgradesAndConnectedDestructibleSpace",
       "Status": "Passed",
-      "Duration": 0.0356339,
+      "Duration": 0.0412496,
       "Message": null,
       "StackTrace": null
     },
     {
-      "FullName": "EmberGrid.Tests.SimulationTests.SameSeedRecreatesMapAndDifferentSeedsVaryIt",
+      "FullName": "BombermanIndieStudio.Tests.SimulationTests.SameSeedRecreatesMapAndDifferentSeedsVaryIt",
       "Status": "Passed",
-      "Duration": 0.0006048,
+      "Duration": 0.0006994,
       "Message": null,
       "StackTrace": null
     }

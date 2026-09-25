@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
     public static partial class GameText
     {

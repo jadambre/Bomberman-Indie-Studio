@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
     /// <summary>Procedural, asset-free presentation. The simulation remains the authority for all positions.</summary>
     public sealed class ArenaView : MonoBehaviour

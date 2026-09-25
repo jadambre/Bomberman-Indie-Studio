@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EmberGrid
+namespace BombermanIndieStudio
 {
     public sealed class GameAudio : MonoBehaviour
     {

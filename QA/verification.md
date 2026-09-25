@@ -6,7 +6,7 @@ This record distinguishes automated and editor checks from the more limited stan
 
 ## Automated tests: 38 passed
 
-Source of record: `QA/all-tests.json`. The Unity editor test run completed in 0.56 seconds with **38 passed, 0 failed, 0 skipped, and 0 inconclusive** results. This comprises 19 simulation test cases, nine save-repository cases and ten localization cases.
+Source of record: `QA/all-tests.json`. The Unity editor test run after the source naming cleanup completed in 3.02 seconds with **38 passed, 0 failed, 0 skipped, and 0 inconclusive** results. This comprises 19 simulation test cases, nine save-repository cases and ten localization cases.
 
 ### Simulation coverage: 19 test cases
 
@@ -88,15 +88,30 @@ The pause-menu F5 handler was corrected after read-only review. A separate input
 
 ## Windows build and standalone validation
 
-- Final build: **Succeeded**, 2026-09-25 01:21:31 UTC, Unity 6000.3.23f1, Windows x64, Mono, release configuration. Build size: 108,814,368 bytes; zero errors. Includes the Bomberman Indie Studio name, stage-scoped power-ups, English/French language option and simplified settings header.
-- Executable: `Builds/Windows/BombermanIndieStudio.exe`. Builds are generated locally and are not included in a clone. Keep the entire Windows directory together. `Play Bomberman Indie Studio.cmd` launches it from the project root after building; the previous launcher forwards to it.
+- Recorded build: **Succeeded**, 2026-09-25 01:21:31 UTC, Unity 6000.3.23f1, Windows x64, Mono, release configuration. Build size: 108,814,368 bytes; zero errors. Includes the Bomberman Indie Studio name, stage-scoped power-ups, English/French language option and simplified settings header. This record predates the source-identifier cleanup described below.
+- Executable: `Builds/Windows/BombermanIndieStudio.exe`. Builds are generated locally and are not included in a clone. Keep the entire Windows directory together. `Play Bomberman Indie Studio.cmd` launches it from the project root after building.
 - One expected build warning: Pipeline has no runtime configuration and is disabled in Player builds. Editor automation does not ship as a running game service.
 - The earlier 2026-09-24 23:39:15 UTC executable was launched with a 1600 × 900 window and a dedicated log. Engine, assemblies, graphics, physics and input initialized; the process remained responsive during startup checks. The test process was then closed. This startup check was not repeated for the subsequent power-up and language updates.
 - The local standalone log contained no managed exceptions or game errors. It included the graphics-driver diagnostic `d3d12: failed to query info queue interface (0x80004002)`; Direct3D 12 initialization subsequently completed. Machine-specific logs are not versioned.
 - Standalone visual inspection, physical cooperative keyboard input, paused F5, and a standalone save/close/reopen cycle have **not** been exercised. Their corresponding gameplay and persistence paths were checked through the editor integration and unit tests described above.
 
-The latest change adds immediate English/French switching in Settings, persisted independently of campaign saves. All 38 tests pass and the Windows release was rebuilt successfully. A final UI correction hides temporary notices behind settings/help/confirmation dialogs; a live check and a fresh French settings capture verified that a save notice no longer covers the title. Existing saves remain compatible, including stage-scoped power-up behavior.
+The language update added immediate English/French switching in Settings, persisted independently of campaign saves. All 38 tests passed for that update and the Windows release was rebuilt successfully. A UI correction hid temporary notices behind settings/help/confirmation dialogs; a live check and a fresh French settings capture verified that a save notice no longer covered the title. Existing saves remained compatible, including stage-scoped power-up behavior.
 
 Follow-up: removed both decorative settings-header phrases in English and French and reduced the panel height to close the vacated space. `QA/settings-copy-check.txt` records a live check in both languages with neither phrase present and zero potentially clipped labels. The updated French settings screenshot was inspected and the Windows build succeeded. The gameplay test suite was not repeated for this text/layout-only edit.
 
-Rename verification: the visible menu and both victory translations use Bomberman Indie Studio. Unity product settings and the built `app.info` agree. A local check confirmed the original Windows campaign path still loaded successfully, with the existing French preference and volume settings retained. Its machine-specific output is not versioned. The menu was visually inspected and its layout audit found zero clipped labels. Source namespaces and the stable Windows save folder retain their internal identity. Both launchers now target the renamed executable; older generated build files remain unreferenced.
+Display-name verification: the visible menu and both victory translations used Bomberman Indie Studio. Unity product settings and the built `app.info` agreed. A local check confirmed the original Windows campaign path still loaded successfully, with the existing French preference and volume settings retained. Its machine-specific output is not versioned. The menu was visually inspected and its layout audit found zero clipped labels.
+
+## Source naming cleanup
+
+The launch scene is now `Assets/Scenes/BombermanIndieStudio.unity`. The assembly definitions use `BombermanIndieStudio.Runtime`, `BombermanIndieStudio.Editor`, and `BombermanIndieStudio.EditMode`; source namespaces use `BombermanIndieStudio`, `BombermanIndieStudio.Editor`, and `BombermanIndieStudio.Tests`. The sole launcher is `Play Bomberman Indie Studio.cmd`.
+
+The Windows save path `%USERPROFILE%\AppData\LocalLow\EmberGrid\EMBERGRID\campaign-v1.json` and Unity company identifier `EmberGrid` remain as storage compatibility settings. They are intentionally independent of the renamed source identifiers.
+
+Validation after the cleanup, 25 September 2026:
+
+- All 38 EditMode tests passed in the renamed assembly; `QA/all-tests.json` contains the new results.
+- Unity loaded the renamed launch scene with the new `GameApp` type and no missing scripts. Asset GUIDs were preserved, and the serialized component identity was updated through Unity. A `MovedFrom` attribute retains the mapping from the previous type identity.
+- The existing Windows campaign loaded successfully. The French language preference was retained, and the editor integration smoke check passed again (`QA/integration-smoke.txt`).
+- The Windows release rebuilt successfully at 01:52:07 UTC, with zero errors and a size of 108,814,801 bytes (`QA/build-report.txt`). Its runtime assembly is `BombermanIndieStudio.Runtime.dll`.
+
+The earlier screenshots and standalone startup check were not repeated for this naming-only change. Two obsolete local build outputs with the old name remain outside version control because automated filesystem cleanup was blocked; the current launcher targets only the new executable.
