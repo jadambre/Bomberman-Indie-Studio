@@ -1,0 +1,6 @@
+{
+  "name": "EmberGrid.Editor",
+  "rootNamespace": "EmberGrid.Editor",
+  "references": ["EmberGrid.Runtime", "Unity.ugui"],
+  "includePlatforms": ["Editor"]
+}
