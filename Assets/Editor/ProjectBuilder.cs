@@ -106,5 +106,53 @@ namespace BombermanIndieStudio.Editor
             Debug.Log(report);
             if(result.summary.result!=BuildResult.Succeeded) throw new Exception("Windows build failed.");
         }
+
+        [MenuItem("Bomberman Indie Studio/Build macOS Apple Silicon release")]
+        public static void BuildMacOSAppleSilicon()
+        {
+            if(!BuildPipeline.IsBuildTargetSupported(BuildTargetGroup.Standalone,BuildTarget.StandaloneOSX))
+                throw new InvalidOperationException("Install Mac Build Support (Mono) for this Unity editor first.");
+            if(!File.Exists("Assets/Scenes/BombermanIndieStudio.unity"))
+                throw new FileNotFoundException("Open the checked-in launch scene before building.");
+
+            // Resolve the optional Mac module at runtime so Windows-only editor installations still compile.
+            Type settingsType=null;
+            foreach(var assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                settingsType=assembly.GetType("UnityEditor.OSXStandalone.UserBuildSettings");
+                if(settingsType!=null) break;
+            }
+            var architecture=settingsType?.GetProperty("architecture",System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.Static);
+            if(architecture==null)
+                throw new InvalidOperationException("The Mac architecture API is unavailable. Restart Unity after installing Mac Build Support.");
+
+            var target=UnityEditor.Build.NamedBuildTarget.Standalone;
+            var previousArchitecture=architecture.GetValue(null);
+            var previousBackend=PlayerSettings.GetScriptingBackend(target);
+            try
+            {
+                architecture.SetValue(null,Enum.Parse(architecture.PropertyType,"ARM64"));
+                PlayerSettings.SetScriptingBackend(target,ScriptingImplementation.Mono2x);
+                PlayerSettings.SetApplicationIdentifier(target,"com.jadambre.bombermanindiestudio");
+                PlayerSettings.productName="Bomberman Indie Studio";
+                AssetDatabase.SaveAssets();
+                Directory.CreateDirectory("Builds/macOS");
+                var result=BuildPipeline.BuildPlayer(new BuildPlayerOptions {
+                    scenes=new[]{"Assets/Scenes/BombermanIndieStudio.unity"},
+                    locationPathName="Builds/macOS/Bomberman Indie Studio.app",
+                    target=BuildTarget.StandaloneOSX, options=BuildOptions.None
+                });
+                var report="Result: "+result.summary.result+"\nTarget: macOS ARM64, Mono\nSize: "+result.summary.totalSize+" bytes\nTime: "+result.summary.totalTime+"\nErrors: "+result.summary.totalErrors;
+                Directory.CreateDirectory("QA"); File.WriteAllText("QA/macos-build-report.txt",report);
+                Debug.Log(report);
+                if(result.summary.result!=BuildResult.Succeeded) throw new Exception("macOS Apple Silicon build failed.");
+            }
+            finally
+            {
+                architecture.SetValue(null,previousArchitecture);
+                PlayerSettings.SetScriptingBackend(target,previousBackend);
+                AssetDatabase.SaveAssets();
+            }
+        }
     }
 }
