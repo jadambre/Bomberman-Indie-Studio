@@ -1,0 +1,7 @@
+{
+  "name": "EmberGrid.EditMode",
+  "rootNamespace": "EmberGrid.Tests",
+  "references": [ "EmberGrid.Runtime" ],
+  "includePlatforms": [ "Editor" ],
+  "optionalUnityReferences": [ "TestAssemblies" ]
+}
