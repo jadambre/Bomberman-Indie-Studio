@@ -21,7 +21,7 @@ Open `Assets/Scenes/BombermanIndieStudio.unity` and press Play. This minimal sce
 | `Assets/Scripts/UI/GameText.Interface.cs` | Additional interface translations. |
 | `Assets/Scripts/Presentation/ArenaView.cs` | Procedural meshes and materials, camera framing, character animation and visual effects. |
 | `Assets/Scripts/UI/GameUI.cs` | Menus, HUD, settings, controls, keyboard navigation and screen layouts. |
-| `Assets/Editor` | Scene configuration, Windows build commands and editor QA helpers. |
+| `Assets/Editor` | Scene configuration, Windows/macOS build commands and editor QA helpers. |
 | `Assets/Tests/EditMode` | Simulation, save-repository and localization tests. |
 
 `BombermanIndieStudio.Runtime` contains the game code. `BombermanIndieStudio.Editor` and `BombermanIndieStudio.EditMode` are editor-only assemblies; the latter contains the tests. Their assembly definitions are `Assets/Scripts/BombermanIndieStudio.Runtime.asmdef`, `Assets/Editor/BombermanIndieStudio.Editor.asmdef`, and `Assets/Tests/EditMode/BombermanIndieStudio.EditMode.asmdef`.
@@ -49,6 +49,18 @@ The checked-in launch scene is ready to use. To regenerate it and apply the proj
 Choose **Bomberman Indie Studio → Build Windows release** to create a Windows x64 Mono release in `Builds/Windows`. The builder preserves shaders used by runtime-created materials and writes a local summary to `QA/build-report.txt`.
 
 Run `Play Bomberman Indie Studio.cmd` after a successful build. When distributing a build, keep its executable, `_Data` directory and Unity DLLs together. Build output is not committed to the source repository.
+
+For Apple Silicon, install **Mac Build Support (Mono)** for the same editor version, then choose **Bomberman Indie Studio → Build macOS Apple Silicon release**. Output is `Builds/macOS/Bomberman Indie Studio.app`; the local summary is `QA/macos-build-report.txt`. The builder selects ARM64 and Mono, and sets the standalone bundle identifier to `com.jadambre.bombermanindiestudio`. Company and product storage names are preserved. The optional Mac architecture API is resolved at runtime so projects still compile in Windows-only Unity installations.
+
+For a closed project, the Unity CLI batch build is:
+
+```sh
+unity run . --editor-version 6000.3.23f1 --timeout 1200 -- -buildTarget OSXUniversal -executeMethod BombermanIndieStudio.Editor.ProjectBuilder.BuildMacOSAppleSilicon -logFile Logs/macos-build.log
+```
+
+The host can be Windows for this Mono build; macOS IL2CPP requires a macOS build environment. Package the complete app with `Tools/package_macos.py` using the command in the README. The script writes a ZIP with Unix file modes and a SHA-256 checksum; ordinary Windows ZIP tools can lose the executable bits required on macOS. Keep the launch guide outside the signed application bundle.
+
+The Mac download is not Developer ID signed or notarized. Signing/notarization and real Mac testing are separate from successful cross-compilation. Before claiming Mac validation, check first launch from a browser download, solo/co-op input, both interface languages, rendering, sound, all arenas and a save/quit/relaunch cycle. See [QA/macos-release.md](QA/macos-release.md) for the recorded checks and outstanding validation.
 
 The official Unity Pipeline package supports optional Unity CLI editor automation without MCP. This is additional tooling; ordinary editor use, Test Runner and the build menu remain available without the CLI.
 

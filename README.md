@@ -12,6 +12,18 @@ For **64-bit Windows**, download the ready-to-play game from the [latest release
 
 Keep all the extracted files and folders together. Launch the game from the extracted folder, not from inside the ZIP archive.
 
+## Play on macOS — Apple Silicon
+
+For **Macs with an Apple Silicon chip (M1 or later), running macOS 12 or later**, download **[Bomberman-Indie-Studio-v1.0.0-macOS-AppleSilicon.zip](https://github.com/jadambre/Bomberman-Indie-Studio/releases/download/v1.0.0/Bomberman-Indie-Studio-v1.0.0-macOS-AppleSilicon.zip)** from the same release. Unity, Git and Rosetta are not required. This build does not support Intel Macs.
+
+1. Double-click the ZIP in Finder to extract it.
+2. Open the extracted **`Bomberman-Indie-Studio-macOS`** folder.
+3. Drag **`Bomberman Indie Studio.app`** into **Applications**, then open it.
+
+**Mac testing status:** the ARM64 build and archive checks passed on Windows; launching, graphics, audio and gameplay still need verification on a real Apple Silicon Mac. The application is **not Developer ID signed or notarized by Apple**, so macOS may block its first launch. If you trust this project's download, try opening it once, then use **System Settings → Privacy & Security → Open Anyway**, when available. See [Apple's instructions](https://support.apple.com/en-us/102445). Do not disable Gatekeeper globally.
+
+Keep the `.app` bundle intact. The ZIP includes an English launch guide, and the release includes a separate SHA-256 checksum. Download the platform-specific ZIP, not the **Source code** archives.
+
 ## Developer setup — clone and open in Unity
 
 Install Git, Git LFS and Unity Hub, then run:
@@ -39,6 +51,18 @@ After building, double-click **`Play Bomberman Indie Studio.cmd`** or run the ex
 
 Generated builds are excluded from Git: **a fresh clone does not include an executable**.
 
+## Developer build — macOS Apple Silicon
+
+Install **Mac Build Support (Mono)** for Unity 6000.3.23f1, then choose **Bomberman Indie Studio → Build macOS Apple Silicon release**. This creates `Builds/macOS/Bomberman Indie Studio.app` with native ARM64 binaries and the bundled Mono runtime. The build can be produced on Windows or macOS; running it requires a Mac.
+
+To package the application on either system, use Python 3.10 or later:
+
+```sh
+python Tools/package_macos.py --app "Builds/macOS/Bomberman Indie Studio.app" --readme Docs/macOS-README.md --output Builds/Releases/Bomberman-Indie-Studio-v1.0.0-macOS-AppleSilicon.zip
+```
+
+The packaging script preserves Unix execution permissions, verifies the bundle and archive, and writes a `.sha256` file. Upload both files as assets of the GitHub release. Test the downloaded archive on an Apple Silicon Mac before marking Mac validation complete. A distribution signed with your Apple Developer ID and notarized by Apple requires an additional signing/notarization workflow before packaging; this build does not include that workflow.
+
 ## Controls
 
 | Action | Player 1 | Player 2 (AZERTY) |
@@ -49,6 +73,8 @@ Generated builds are excluded from Git: **a fresh clone does not include an exec
 | Quick save | F5 | F5 |
 
 Menus support the mouse, arrow keys / Tab, and Enter. Player 2 uses the physical WASD key positions, corresponding to ZQSD on AZERTY. Player 1's directional keys and Space work independently of keyboard layout.
+
+On Mac keyboards where the top row controls system features, use **Fn + F5** for quick save, or choose **Pause → Save & Menu**.
 
 ## Language
 
