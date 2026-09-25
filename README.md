@@ -12,16 +12,6 @@ For **64-bit Windows**, download the ready-to-play game from the [latest release
 
 Keep all the extracted files and folders together. Launch the game from the extracted folder, not from inside the ZIP archive.
 
-## Jouer sur Windows — sans Unity ni Git
-
-Pour **Windows 64 bits**, téléchargez le jeu prêt à lancer depuis la [dernière version publiée](https://github.com/jadambre/Bomberman-Indie-Studio/releases/latest).
-
-1. Dans **Assets**, téléchargez **[Bomberman-Indie-Studio-v1.0.0-Windows-x64.zip](https://github.com/jadambre/Bomberman-Indie-Studio/releases/download/v1.0.0/Bomberman-Indie-Studio-v1.0.0-Windows-x64.zip)**. Les archives **Source code** contiennent le projet de développement, pas le jeu jouable.
-2. Faites un clic droit sur le ZIP téléchargé, puis choisissez **Extraire tout**.
-3. Ouvrez le dossier extrait **`Bomberman-Indie-Studio-Windows`**, puis double-cliquez sur **`BombermanIndieStudio.exe`**.
-
-Conservez tous les fichiers et dossiers extraits ensemble. Lancez le jeu depuis le dossier extrait, pas directement dans l'archive ZIP.
-
 ## Developer setup — clone and open in Unity
 
 Install Git, Git LFS and Unity Hub, then run:
@@ -60,11 +50,9 @@ Generated builds are excluded from Git: **a fresh clone does not include an exec
 
 Menus support the mouse, arrow keys / Tab, and Enter. Player 2 uses the physical WASD key positions, corresponding to ZQSD on AZERTY. Player 1's directional keys and Space work independently of keyboard layout.
 
-## Language / Langue
+## Language
 
-Open **Settings → Language** from the main menu or pause menu, then choose **English** or **Français**. The interface changes immediately. Your choice is saved for the next launch without changing the campaign. English is the default until another language is selected.
-
-Ouvrez **Options → Langue** depuis le menu principal ou la pause, puis choisissez **Français** ou **English**. Le changement est immédiat et mémorisé pour les prochains lancements, sans modifier votre partie.
+Open **Settings → Language** from the main menu or pause menu to switch between English and French. The interface changes immediately. Your choice is saved for the next launch without changing the campaign. English is the default until another language is selected.
 
 ## Rules
 
